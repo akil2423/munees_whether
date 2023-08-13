@@ -12,10 +12,10 @@ function App() {
   useEffect(() => {
     fetch(
       // `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=189271b827844bff7388350c44848615&units=metric`
-      `http://13.234.238.246:8006/fetch-weather/${cityName}`
+      `http://3.108.185.235:7070/fetch-weather/${cityName}`
     )
       .then((res) => {
-        console.log( `http://13.234.238.246:8006/fetch-weather/${cityName}`,"urllllllll");
+        console.log( `http://3.108.185.235:7070/fetch-weather/${cityName}`,"urllllllll");
         if (res.status === 200) {
           error && setError(false);
           return res.json();
